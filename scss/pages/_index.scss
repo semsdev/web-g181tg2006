@@ -2,7 +2,7 @@
   color: $color-light;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: gray url(img/showcase_back.jpg) no-repeat center center / cover;
+  background: gray url(/img/showcase.jpg) no-repeat center center / cover;
   text-align: center;
 
   @include mq('tablet') {
