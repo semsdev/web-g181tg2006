@@ -7,13 +7,13 @@
 }
 
 a {
-  color: $color-black;
+  color: $color-dark;
 }
 
 .icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -31,6 +31,19 @@ body {
   height: $finger-size;
   font-weight: bold;
   color: white;
-  background-color: $color-orange;
+  background-color: transparent;
   border-radius: $border-radius;
+
+  &-icon {
+    justify-content: center;
+    color: $color-dark;
+    padding-left: 0;
+    padding-right: 0;
+    width: $finger-size;
+  }
+
+  &-click {
+    color: $color-light;
+    background-color: $color-primary;
+  }
 }

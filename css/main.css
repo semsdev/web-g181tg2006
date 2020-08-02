@@ -406,8 +406,8 @@ a {
 
 .icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -425,8 +425,21 @@ body {
   height: 40px;
   font-weight: bold;
   color: white;
-  background-color: #ec6901;
+  background-color: transparent;
   border-radius: 3px;
+}
+
+.button-icon {
+  justify-content: center;
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40px;
+}
+
+.button-click {
+  color: #fff;
+  background-color: #ec6901;
 }
 
 .Header {
@@ -434,24 +447,85 @@ body {
 }
 
 .Header .container {
+  position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 100%;
+}
+
+.Header-logo img {
+  width: 110 px;
+}
+
+.Header-bars {
+  position: relative;
+  left: 10px;
+  margin-left: auto;
+  color: #ec6901;
+}
+
+@media (min-width: 768px) {
+  .Header-bars {
+    display: none;
+  }
 }
 
 .Header-menu {
-  margin-left: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
   display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 30px 15px rgba(0, 0, 0, 0.04);
+}
+
+.Header.menu-show .Header-menu {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .Header-menu {
+    pointer-events: auto;
+    opacity: 1;
+    transition: 0s;
+    margin-left: auto;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .Header-menu-user {
   margin-right: 10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .Header-menu-user {
+    flex-direction: row;
+  }
 }
 
 .Header-menu-user a {
+  width: 100%;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
   height: 40px;
@@ -462,31 +536,29 @@ body {
   border-radius: 3px;
 }
 
-.Header-menu-bars {
-  color: #ec6901;
+.Header-menu-lang {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
-  .Header-menu-bars {
-    display: none;
+  .Header-menu-lang {
+    margin-left: 10px;
+    margin-top: 0;
   }
-}
-
-.Header-menu-lang {
-  margin-left: 10px;
-  display: flex;
 }
 
 .Header-menu-lang select {
   appearance: none;
   border: 1px solid #f4f4f4;
-  border-radius: 0;
   padding-right: 10px;
   padding-left: 10px;
   height: 40px;
   border-radius: 0;
   font-size: 12px;
   color: #ec6901;
+  height: 40px;
 }
 
 .Header-menu-lang select:nth-child(1) {
