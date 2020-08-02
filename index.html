@@ -5,28 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DHU Web</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aadfe7cf3c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden;"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+          <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+        </symbol>
+      </defs>
+    </svg>
     <header class="Header">
       <div class="container">
         <a calss="Header-logo" href="">
-          <img src="/img/logo-dhu.png" alt="" />
+          <img src="img/logo-dhu.png" alt="" />
         </a>
+
+        <button class="Header-menu-bars" type="button">
+          <svg class="icon icon-menu">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
 
         <div class="Header-menu">
           <div class="Header-menu-user">
             <a href="">Register</a>
-            <a href="">Sign in</a>
+            <a href="">Sign In</a>
+            <a href="">Home</a>
           </div>
 
-          <a href="">List your proparty</a>
-
-          <div class="Header-menu-helper">
+          <div class="Header-menu-lang">
             <select>
-              <option value="en">EN</option>
+              <option value="en">ENG</option>
             </select>
             <select>
-              <option value="jp">JP</option>
+              <option value="jp">日本</option>
             </select>
           </div>
         </div>
