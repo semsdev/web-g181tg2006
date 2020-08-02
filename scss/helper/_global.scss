@@ -1,3 +1,7 @@
+body {
+  font-family: $font-family;
+}
+
 .container {
   max-width: $max-width;
   margin-left: auto;
@@ -17,10 +21,6 @@ a {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-body {
-  font-family: $font-family;
 }
 
 .button {
