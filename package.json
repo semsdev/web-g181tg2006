@@ -9,10 +9,16 @@
   "author": "エブギン",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
-    "gulp-watch": "^5.0.1",
-    "node-sass": "^4.14.1"
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1"
   },
   "dependencies": {}
 }
