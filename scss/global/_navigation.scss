@@ -1,5 +1,6 @@
 .Navigation {
-  height: 30px;
+  top: $Header-height;
+  height: 40px;
   background-color: $color-secondary;
 
   .container {
@@ -12,5 +13,10 @@
   &-item {
     margin-right: 20px;
     font-size: $font-size-s;
+
+    &:hover {
+      font-weight: 700;
+      transition: 0.1;
+    }
   }
 }

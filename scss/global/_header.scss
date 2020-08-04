@@ -1,11 +1,5 @@
-body {
-  font-size: 1em;
-  font-family: $font-family;
-}
 .Header {
-  border-bottom: 1px solid #ddd;
-  height: 64px;
-  font-weight: 400;
+  height: $Header-height;
 
   .container {
     position: relative;
@@ -24,10 +18,11 @@ body {
     position: relative;
     left: 10px;
     margin-left: auto;
+    color: $color-primary;
+
     @include mq('tablet') {
       display: none;
     }
-    color: $color-primary;
   }
 
   &-menu {
@@ -36,27 +31,30 @@ body {
     //transform: translateX(100%);
     transition: 0.4s;
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 100%;
+    top: $Header-height;
     padding-left: $gutter;
     padding-right: $gutter;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     flex-direction: column;
     background-color: $color-light;
     box-shadow: 0 30px 15px rgba(black, 0.04);
+    //height: 100%;
+    z-index: 2;
 
     .Header.menu-show & {
       pointer-events: auto;
       opacity: 1;
+      padding-top: 50px;
       //transform: translateY(0);
     }
 
     @include mq('tablet') {
       pointer-events: auto;
       opacity: 1;
-      transform: translateY(0);
+      //transform: translateY(0);
       transition: 0s;
       margin-left: auto;
       flex-direction: row;
@@ -87,6 +85,7 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         height: $finger-size;
+
         &:hover {
           background-color: $color-secondary;
           border-radius: $border-radius;
@@ -106,10 +105,10 @@ body {
 
       select {
         appearance: none;
+        background-color: transparent;
         border: 1px solid $color-secondary;
         padding-right: 10px;
         padding-left: 10px;
-        height: $finger-size;
         border-radius: 0;
         font-size: 0.8em;
         color: $color-primary;
@@ -123,6 +122,11 @@ body {
           border-left-width: 0;
           border-bottom-right-radius: $border-radius;
           border-top-right-radius: $border-radius;
+        }
+
+        &:hover {
+          background-color: $color-secondary;
+          border-radius: $border-radius;
         }
       }
     }
