@@ -338,7 +338,9 @@ template {
 }
 
 /*! formalize.css | MIT License | github.com/interacthings/formalize */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -362,19 +364,42 @@ img {
   vertical-align: middle;
 }
 
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre,
+fieldset,
+ul,
+ol,
+menu,
+form {
   margin: 0;
 }
 
-button, fieldset, iframe {
+button,
+fieldset,
+iframe {
   border: 0;
 }
 
-fieldset, ul, ol, button, menu {
+fieldset,
+ul,
+ol,
+button,
+menu {
   padding: 0;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -592,7 +617,7 @@ a {
   height: 20px;
 }
 
-.checkbox input:checked + .icon {
+.checkbox input:checked+.icon {
   display: block;
   font-size: 16px;
 }
@@ -935,7 +960,7 @@ http://flickity.metafizzy.co
   background: linear-gradient(to bottom, rgba(18, 43, 75, 0.9) 0%, rgba(17, 47, 78, 0.9) 100%);
 }
 
-.Showcase > * {
+.Showcase>* {
   z-index: 1;
   position: relative;
 }
@@ -982,12 +1007,12 @@ http://flickity.metafizzy.co
   }
 }
 
-.Showcase-shortlink a + a {
+.Showcase-shortlink a+a {
   margin-top: 20px;
 }
 
 @media (min-width: 768px) {
-  .Showcase-shortlink a + a {
+  .Showcase-shortlink a+a {
     margin-top: 0;
   }
 }
@@ -1050,12 +1075,12 @@ http://flickity.metafizzy.co
   }
 }
 
-.Schedule-form-item + .Schedule-form-item {
+.Schedule-form-item+.Schedule-form-item {
   margin-top: 20px;
 }
 
 @media (min-width: 768px) {
-  .Schedule-form-item + .Schedule-form-item {
+  .Schedule-form-item+.Schedule-form-item {
     flex-grow: 1;
     margin-top: 0;
     margin-left: 10px;
@@ -1203,43 +1228,54 @@ http://flickity.metafizzy.co
     text-align: left;
     font-size: 18px;
   }
+
   .Copy p {
     line-height: 1.6em;
   }
+
   .Copy section {
     column-count: 2;
     column-rule-style: solid;
     column-rule-color: #ec6901;
   }
-  .Copy section > * {
+
+  .Copy section>* {
     margin-top: 0;
   }
+
   .Copy h1 {
     font-size: 2.5rem;
     margin: 2em 0 1em;
   }
+
   .Copy .Outer {
     padding: 4em;
   }
+
   .Copy article {
     padding: 2em;
     background: #273f5b;
   }
+
   .Copy h2 {
     display: inline-block;
     position: relative;
     z-index: 1;
   }
+
   .Copy .Secondary {
     margin-top: 2em;
   }
+
   .Copy img {
     width: 100%;
   }
+
   .Copy h3 {
     color: #f4f4f4;
     margin: 1.5em 0 1em;
   }
+
   .Copy p.Span-all {
     column-span: all;
     font-size: 1.6em;
@@ -1255,6 +1291,7 @@ http://flickity.metafizzy.co
     margin: 0 auto;
     width: 80%;
   }
+
   .Copy section {
     column-count: 3;
   }
