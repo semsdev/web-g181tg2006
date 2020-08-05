@@ -36,6 +36,21 @@
         <symbol id="icon-menu" viewBox="0 0 32 32">
           <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
         </symbol>
+        <symbol id="icon-clock" viewBox="0 0 32 32">
+          <path
+            d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"
+          ></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+          <path
+            d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"
+          ></path>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 32 32">
+          <path
+            d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"
+          ></path>
+        </symbol>
       </defs>
     </svg>
 
@@ -120,9 +135,9 @@
             <form class="Schedule-form" action="">
               <div class="Schedule-form-item">
                 <div class="form-item">
-                  <div class="icon icon-at form-item-icon">
-                    <i class="fas fa-user"></i>
-                  </div>
+                  <svg class="icon icon-at form-item-icon">
+                    <use xlink:href="#icon-user"></use>
+                  </svg>
                   <input
                     class="text"
                     type="text"
@@ -134,9 +149,9 @@
 
               <div class="Schedule-form-item">
                 <div class="form-item">
-                  <div class="icon icon-time form-item-icon">
-                    <i class="far fa-calendar"></i>
-                  </div>
+                  <svg class="icon icon-time form-item-icon">
+                    <use xlink:href="#icon-calendar"></use>
+                  </svg>
                   <input class="text" type="date" />
                 </div>
                 <p class="form-description">Choose an availabe date</p>
@@ -144,12 +159,12 @@
 
               <div class="Schedule-form-item">
                 <div class="form-item">
-                  <div class="icon icon-time form-item-icon">
-                    <i class="far fa-clock"></i>
-                  </div>
+                  <svg class="icon icon-time form-item-icon">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
                   <div class="select">
                     <div class="icon icon-arrow-bottom select-icon">
-                      <i class="fas fa-angle-down"></i>
+                      <!-- <i class="fas fa-angle-down"></i> -->
                     </div>
                     <select>
                       <option value="">13:00</option>
@@ -206,7 +221,6 @@
         </div>
       </section>
 
-      <!--
       <section class="Highlights">
         <div class="container">
           <div class="Highlights-slider">
@@ -214,17 +228,18 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">
+                    COVID-19 Emergency Committee highlights need for response
+                    efforts over long term
+                  </h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">1 August 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">News release</a>
                     </div>
                   </div>
                 </div>
@@ -235,17 +250,18 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1584483766114-2cea6facdf57?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">
+                    More than 150 countries engaged in COVID-19 vaccine global
+                    access facility
+                  </h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">15 July 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">Geneva/London</a>
                     </div>
                   </div>
                 </div>
@@ -256,17 +272,18 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1584291527905-f930791fb1ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=800);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">
+                    WHO and UNICEF warn of a decline in vaccinations during
+                    COVID-19
+                  </h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">15 July 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">Geneva/New York</a>
                     </div>
                   </div>
                 </div>
@@ -277,17 +294,15 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1585331505473-7586f9cb0854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">ACT-Accelerator update</h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">26 June 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">News release</a>
                     </div>
                   </div>
                 </div>
@@ -298,17 +313,15 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1586369610044-b898d056a9d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">Billions worldwide living with herpes</h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">1 May 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">News release</a>
                     </div>
                   </div>
                 </div>
@@ -319,17 +332,18 @@
               <div
                 class="Highlights-item-show"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=400&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+                  background-image: url(https://images.unsplash.com/photo-1579544758184-a8994eb607a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
                 "
               >
                 <div class="content">
-                  <h4 class="title">Paris</h4>
+                  <h4 class="title">
+                    WHO to accelerate research and innovation for new
+                    coronavirus
+                  </h4>
                   <div class="tag">
-                    <h5 class="tag-title">Top reasons to visit:</h5>
+                    <h5 class="tag-title">6 February 2020</h5>
                     <div class="tag-list">
-                      <a class="tag-item" href="">museums</a
-                      ><a class="tag-item" href="">sigtseeing</a
-                      ><a class="tag-item" href="">culture</a>
+                      <a class="tag-item" href="">Geneva</a>
                     </div>
                   </div>
                 </div>
@@ -339,7 +353,6 @@
           </div>
         </div>
       </section>
-      -->
 
       <section class="Copy">
         <div class="container">
@@ -421,9 +434,14 @@
           </p>
         </div>
       </section>
-    </main>
 
-    <script src="/dist/js/jquery-3.5.1.min.js"></script>
+      <footer class="Footer">
+        <a href="#top">Top Menu</a>
+        <p>Copyright &copy;2020</p>
+      </footer>
+    </main>
+    <script src="/dist/js/jquery-3.2.1.min.js"></script>
+    <script src="/dist/js/flickity.pkgd.min.js"></script>
     <script src="/dist/js/main.js"></script>
   </body>
 </html>

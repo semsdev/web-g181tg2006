@@ -20,5 +20,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-watch": "^5.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
