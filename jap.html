@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      http-equiv="Content-Type"
+      content="text/html; charset=ISO-3166-2:JP"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="geo.position" content="latitude; longitude" />
+    <meta name="geo.placename" content="Tokyo" />
+    <meta name="geo.region" content="JP-13" />
+    <meta
+      name="description"
+      content="デジタルハリウッド大学院の演習科目である「制作演習A・Web授業」の授業内容に関するWebページです"
+    />
+    <meta
+      name="keywords"
+      content="デジタルハリウッド大学院,制作演習A,インターネット,Web"
+    />
+    <title>DHU CVD19</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aadfe7cf3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden;"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+          <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 32 32">
+          <path
+            d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"
+          ></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+          <path
+            d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"
+          ></path>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 32 32">
+          <path
+            d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="Header">
+      <div class="container">
+        <a calss="Header-logo" href="">
+          <img src="./dist/img/logo-dhu.png" alt="" />
+        </a>
+
+        <button class="Header-bars button button-icon" type="button">
+          <svg class="icon icon-menu">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="Header-menu">
+          <div class="Header-menu-user">
+            <a href="">登録</a>
+            <a href="">サインイン</a>
+            <a href="">連絡先</a>
+          </div>
+
+          <div class="Header-menu-lang">
+            <select>
+              <option value="en">ENG</option>
+              <option value="jp">TUR</option>
+            </select>
+            <select lang="ja">
+              <option value="jp">日本</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="Navigation">
+      <div class="container">
+        <a
+          class="Navigation-item"
+          href="https://www.dhw.ac.jp/en/"
+          target="_blank"
+          >DHU Top</a
+        >
+        <a
+          class="Navigation-item"
+          href="https://www.dhw.ac.jp/en/academics/"
+          target="_blank"
+          >学部紹介</a
+        >
+        <a
+          class="Navigation-item"
+          href="https://www.dhw.ac.jp/en/admissions/"
+          target="_blank"
+          >入試情報</a
+        >
+        <a
+          class="Navigation-item"
+          href="https://www.dhw.ac.jp/en/life/"
+          target="_blank"
+          >キャンパスライフ</a
+        >
+      </div>
+    </nav>
+
+    <main class="Main">
+      <section class="Showcase">
+        <div class="container">
+          <h1 class="Showcase-title">COVID-19オンライン情報センター</h1>
+          <h3 class="Showcase-subtitle">
+            Digital Hollywood University
+            <p lang="ja">デジタルハリウッド大学</p>
+          </h3>
+
+          <div class="Schedule">
+            <div class="Schedule-title">
+              <h3>
+                オンライン「パンデミック予防セミナー」のご予約ができます
+              </h3>
+            </div>
+
+            <form class="Schedule-form" action="">
+              <div class="Schedule-form-item">
+                <div class="form-item">
+                  <svg class="icon icon-at form-item-icon">
+                    <use xlink:href="#icon-user"></use>
+                  </svg>
+                  <input
+                    class="text"
+                    type="text"
+                    placeholder="example@email.com"
+                  />
+                </div>
+                <p class="form-description">メールアドレスを入力してください</p>
+              </div>
+
+              <div class="Schedule-form-item">
+                <div class="form-item">
+                  <svg class="icon icon-time form-item-icon">
+                    <use xlink:href="#icon-calendar"></use>
+                  </svg>
+                  <input class="text" type="date" />
+                </div>
+                <p class="form-description">利用可能な日付を選択してください</p>
+              </div>
+
+              <div class="Schedule-form-item">
+                <div class="form-item">
+                  <svg class="icon icon-time form-item-icon">
+                    <use xlink:href="#icon-clock"></use>
+                  </svg>
+                  <div class="select">
+                    <div class="icon icon-arrow-bottom select-icon">
+                      <!-- <i class="fas fa-angle-down"></i> -->
+                    </div>
+                    <select>
+                      <option value="">13:00</option>
+                      <option value="">14:00</option>
+                      <option value="">15:00</option>
+                      <option value="">16:00</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Schedule-form-item">
+                <div class="subscribe">
+                  <label class="form-checkbox">
+                    最新情報を購読する
+                    <div class="checkbox">
+                      <input type="checkbox" />
+                      <div class="icon icon-check">
+                        <i class="fas fa-check"></i>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <button class="button button-click button-full" type="button">
+                  予約
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="Showcase-shortlink">
+            <a
+              href="https://toyokeizai.net/sp/visual/tko/covid19/en.html"
+              target="_blank"
+              >COVID-19デイリーレート</a
+            >
+            <a
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+              target="_blank"
+              >緊急</a
+            >
+            <a
+              href="https://www.worldometers.info/coronavirus/?utm_campaign=homeAdvegas1?"
+              target="_blank"
+              >COVID-19疾患ダッシュボード</a
+            >
+            <a href="https://www.who.int/" target="_blank">WHO</a>
+            <a
+              href="https://www.un.org/en/coronavirus/covid-19-faqs"
+              target="_blank"
+              >FAQ</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="Highlights">
+        <div class="container">
+          <div class="Highlights-slider">
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">
+                    COVID-19緊急委員会は長期にわたる対応努力の必要性を強調
+                  </h4>
+                  <div class="tag">
+                    <h5 class="tag-title">2020年8月1日</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ニュースリリース</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1584483766114-2cea6facdf57?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">
+                    150か国以上がCOVID-19ワクチンのグローバルアクセス施設に従事
+                  </h4>
+                  <div class="tag">
+                    <h5 class="tag-title">2020年7月15日</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ジュネーブ/ロンドン</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1584291527905-f930791fb1ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=800);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">
+                    WHOとユニセフはCOVID-19期間中のワクチン接種の減少を警告
+                  </h4>
+                  <div class="tag">
+                    <h5 class="tag-title">2020年7月15日</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ジュネーブ/ニューヨーク</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1585331505473-7586f9cb0854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">ACT-Acceleratorの更新</h4>
+                  <div class="tag">
+                    <h5 class="tag-title">2020年6月26日</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ニュースリリース</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1586369610044-b898d056a9d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">
+                    ヘルペスと一緒に暮らしている世界中の何十億人もの人々
+                  </h4>
+                  <div class="tag">
+                    <h5 class="tag-title">1 May 2020</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ニュースリリース</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+            <div class="Highlights-item">
+              <div
+                class="Highlights-item-show"
+                style="
+                  background-image: url(https://images.unsplash.com/photo-1579544758184-a8994eb607a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);
+                "
+              >
+                <div class="content">
+                  <h4 class="title">
+                    WHOが新しいコロナウイルスの研究とイノベーションを加速
+                  </h4>
+                  <div class="tag">
+                    <h5 class="tag-title">2020年2月6日</h5>
+                    <div class="tag-list">
+                      <a class="tag-item" href="">ジュネーブ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Highlights-item-extra">extra</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="Copy">
+        <div class="Outer">
+          <h1>一般向けのコロナウイルス病（COVID-19）アドバイス</h1>
+          <article>
+            <section>
+              <p>
+                COVID-19アウトブレイクに関する最新情報に常に注意してください。
+                WHOのWebサイト、および国や地方自治体から入手可能 公衆衛生当局。
+                世界のほとんどの国が
+                COVID-19の症例が見られ、多くはアウトブレイクを経験しています。
+                中国および他のいくつかの国の当局は成功しました
+                彼らの発生を遅らせる。 ただし、状況は予測できません
+                定期的に最新のニュースをチェックしてください。
+              </p>
+
+              <p>
+                感染または拡大する可能性を減らすことができます
+                いくつかの簡単な予防策を講じてCOVID-19：定期的に
+                アルコールベースの手でこすり洗いするか、 石鹸と水で洗います。
+                どうして？ 石鹸で手を洗う
+                そして、水またはアルコールベースのハンドラブを使用すると、
+                あなたの手にあります。
+                少なくとも1メートル（3フィート）の距離を保つ
+                自分と他の人との間。 どうして？ 誰かが咳、くしゃみ、
+                または、彼らは彼らの鼻から小さな液滴を噴霧するか、または
+                ウイルスを含む可能性のある口。 近すぎる場合は、
+                COVID-19ウイルスを含む液滴を吸い込んだ場合
+                人は病気を持っています。
+                混雑した場所に行くことは避けてください。
+              </p>
+
+              <p>
+                どうして？人が集まる場所では、あなたはより可能性が高いです
+                COVID-19とそれを持っている誰かと密接に接触する
+                1メートルの物理的な距離を維持することはより困難です（3
+                フィート）。目、鼻、口には触れないでください。どうして？手が触れる
+                多くの表面とウイルスを拾うことができます。汚染されたら、手
+                ウイルスを目、鼻、口に感染させる可能性があります。そこから、
+                ウイルスは体内に入り感染する可能性があります。あなたを確認し、そして
+                あなたの周りの人々は、良好な呼吸衛生に従ってください。この
+                曲がった肘で口と鼻を覆うか、
+                咳やくしゃみをするときの組織。次に、使用済みの組織を処分します
+                すぐに手を洗います。どうして？液滴がウイルスを拡散させます。沿って
+                良好な呼吸衛生に従って、あなたは人々を守ります
+                風邪、インフルエンザ、COVID-19などのウイルスからあなたの周りに。滞在
+                自宅や咳などの軽微な症状があっても自己隔離し、
+                頭痛、軽度の発熱、回復するまで。誰かに連れてきて
+                用品。家を出る必要がある場合は、マスクを着用してください
+                他人に感染。
+              </p>
+
+              <img
+                src="https://images.unsplash.com/photo-1588623358844-fd118c056dfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
+                alt="Medicine"
+              />
+
+              <h3>COVID-19の広がりから身を守る</h3>
+
+              <p>
+                他の人との接触を避けることはそれらを可能から保護します
+                COVID-19およびその他のウイルス。発熱、咳、
+                呼吸困難、医師の診察を受けるが、
+                可能であれば事前に電話し、指示に従ってください
+                地元の保健当局。どうして？国および地方自治体
+                の状況に関する最新の情報があります
+                あなたの地域。事前に電話することであなたの健康管理が可能になります
+                迅速に適切な医療施設にあなたを導くプロバイダー。
+                これはまたあなたを保護し、ウイルスの拡散を防ぐのに役立ちます
+                およびその他の感染症。最新の情報を最新に保つ
+                WHOや地域や国などの信頼できる情報源から
+                保健当局。どうして？地方自治体と当局が最適です
+                お住まいの地域の人々が何をすべきかについてアドバイスするために配置
+                身を守る。
+              </p>
+
+              <p>
+                COVID-19から身を守り、手をきれいに
+                頻繁かつ徹底的に。アルコールベースの手指消毒剤または
+                石鹸と水で手を洗います。アルコールベースの場合
+                手の消毒剤、あなたがそれを使用し、慎重に保管することを確認してください保つ
+                子供の手の届かないアルコールベースの手指消毒剤。教える
+                消毒剤を適用し、その使用を監視する方法。適用する
+                あなたの手にコインサイズの金額。大型を使用する必要はありません
+                製品の量。目、口、鼻に触れないでください
+                アルコールベースの手指消毒剤を使用した直後
+                刺激を引き起こす可能性があります。保護することをお勧めする手の消毒剤
+                COVID-19に対してはアルコールベースであるため、
+                可燃性。火気や調理の前には使用しないでください。いいえの下
+                状況、飲酒、またはアルコールベースの子供に飲み込ませる
+                手指消毒剤。有毒である可能性があります。あなたの洗浄
+                石鹸と水で手を洗うこともCOVID-19に対して効果的です。
+              </p>
+            </section>
+
+            <h2 class="Secondary">会議の議事録</h2>
+
+            <section>
+              <p>
+                事務局長は委員会を歓迎し、
+                以来、SARS-CoV-2ウイルスに関する世界的な理解が進んでいます。
+                国際的な公衆衛生緊急事態の宣言
+                2020年1月30日の懸念（PHEIC）、および
+                緊急委員会によるさらなる注意が必要です。
+              </p>
+
+              <p>
+                法務部および部局の代表
+                コンプライアンス、リスク管理、および倫理（CRE）は、
+                メンバーの役割と責任について。 倫理担当役員
+                CREからのメンバーとアドバイザーに概要を提供しました
+                WHOの関心宣言プロセス。 メンバーと アドバイザーは、
+                WHOに適時に開示し、 個人的、専門的、財政的、知的または商業的
+                の知覚されたまたは直接の対立を引き起こす可能性のある性質 興味。
+                彼らはさらに彼らに義務を思い出させられました
+                会議の議論との機密性を維持します 委員会の仕事。
+                出席した各メンバーが調査されました
+                そして利益相反は確認されなかった。
+              </p>
+
+              <p>
+                事務局は会議を議長、教授に委ねた ディディエフサン。
+                フサン教授も委員会を歓迎した 会議の目的と議題を確認しました。
+              </p>
+
+              <h3>
+                WHOはヒドロキシクロロキンとロピナビル/リトナビルを中止COVID-19の治療アーム！
+              </h3>
+
+              <p>
+                795/5000 WHOは今日、連帯からの勧告を受け入れました
+                トライアルの国際運営委員会は、
+                試験のヒドロキシクロロキンとロピナビル/リトナビル群。 の
+                効果的なものを見つけるために、WHOが結束裁判を設立
+                入院患者のためのCOVID-19治療。 国際 運営委員会は、
+                ヒドロキシクロロキンと標準治療との比較
+                連帯からのロピナビル/リトナビル対標準治療
+                試験の中間結果、およびからの証拠のレビューから
+                COVID-19に関する7月1〜2日WHOサミットで発表されたすべての裁判
+                研究と革新。
+              </p>
+
+              <p class="Span-all">
+                中華人民共和国北京でのCOVID-19のTAクラスター
+              </p>
+
+              <p>
+                WHOは、中国の当局に、 中華人民共和国、北京でのCOVID-19症例。
+                今日、 国民健康委員会と北京保健局の職員
+                委員会は詳細を共有するためにWHOの中国カントリーオフィスに概要を説明しました
+                北京で進行中の予備調査の。 6月13日現在、
+                41の症候性検査室で確認された症例と46の検査室
+                COVID-19の症状がない確認された症例は 北京で確認された。
+              </p>
+
+              <p>
+                最初に確認された症例は6月9日に発症し、 6月11日に確認されました。
+                最初のケースのいくつかは
+                北京の6つの発熱クリニックで確認されました。 予備的
+                調査により、最初の症状の一部が
+                事件は北京のXinfadi市場と関連があった。 予備的
+                ヒトの咽頭スワブの実験室調査 Xinfadi
+                Marketの環境サンプルで45の陽性が確認されました
+                人間のサンプル（報告時点ですべて無症状）
+                そして40のポジティブな環境サンプル。 1つの追加のケース
+                症状のないものは、 確認されたケース
+              </p>
+
+              <p>
+                すべてのケースは隔離されており、必要に応じて管理されています。
+                トレースが進行中です。 サンプルの遺伝子配列決定も
+                進行中であり、これらの結果を迅速に共有することは、
+                クラスターの起源とケース間のリンクを理解する。
+                WHOはサポートと技術支援を提供しました。 クラスターと
+                調査が進行中で、計画されています。
+              </p>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <footer class="Footer">
+        <a href="#top">Top Menu</a>
+        <p>Copyright &copy;2020</p>
+      </footer>
+    </main>
+
+    <script src="./dist/js/jquery-3.2.1.min.js"></script>
+    <script src="./dist/js/flickity.pkgd.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
